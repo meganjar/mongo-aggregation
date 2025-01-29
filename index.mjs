@@ -5,6 +5,7 @@ const app = express();
 
 import grades from "./routes/grades.mjs";
 import grades_agg from "./routes/grades_agg.mjs";
+import stats from "./routes/stats.mjs";
 
 app.use(express.json());
 
@@ -13,7 +14,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/grades", grades);
-app.use("/grades", grades_agg);
+app.use("/grades/agg", grades_agg);
+app.use("/grades", stats);
 
 // Global error handling
 app.use((err, _req, res, next) => {

@@ -5,7 +5,7 @@ import { ObjectId } from "mongodb";
 const router = express.Router();
 
 /**
- * It is not best practice to seperate these routes
+ * It is not best practice to separate these routes
  * like we have done here. This file was created
  * specifically for educational purposes, to contain
  * all aggregation routes in one place.
@@ -14,7 +14,7 @@ const router = express.Router();
 /**
  * Grading Weights by Score Type:
  * - Exams: 50%
- * - Quizes: 30%
+ * - Quizzes: 30%
  * - Homework: 20%
  */
 
